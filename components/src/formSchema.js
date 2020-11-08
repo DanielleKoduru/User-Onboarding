@@ -4,7 +4,7 @@ const formSchema = yup.object().shape({
     name: yup
         .string()
         .trim()
-        .min(6, 'The name must be at least six characters long')
+        .min(6, 'Name must be at least three characters long')
         .required('Name is a required field'),
     email: yup
         .string()
@@ -13,7 +13,7 @@ const formSchema = yup.object().shape({
     password: yup
         .string()
         .trim()
-        .min(8, 'The password must be at least eight characters long')
+        .min(8, 'Password must be at least eight characters long')
         .required('Password is a required field'),
     termsOfService: yup.bool().oneOf([true], 'You must accept the Terms of Service'),
 });

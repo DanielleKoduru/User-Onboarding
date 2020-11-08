@@ -34,6 +34,7 @@ export default function App() {
       .post(`https://reqres.in/api/users`, newUser)
       .then((response) => {
         setUsers([response.data, ...users]);
+        console.log(response.data)
       })
       .catch((error) => {
         console.log(error);
@@ -107,9 +108,6 @@ export default function App() {
         errors={formErrors}
         values={formValues}
       />
-      {/* {users.map((user, index) => {
-        return <User key={index} details={user} />
-      })} */}
     </div>
   );
 }

@@ -22,6 +22,7 @@ export default function Form(props) {
                     value={values.name}
                 />
             </label>
+
             <label>
                 Email:&nbsp;
                 <input
@@ -31,6 +32,7 @@ export default function Form(props) {
                     value={values.email}
                 />
             </label>
+
             <label>
                 Password:&nbsp;
             <input
@@ -40,9 +42,10 @@ export default function Form(props) {
                     value={values.password}
                 />
             </label>
+
             <label className="checkbox">
                 I accept the Terms of Service:&nbsp;
-        <input
+            <input
                     type="checkbox"
                     name="termsOfService"
                     checked={values.termsOfService}
